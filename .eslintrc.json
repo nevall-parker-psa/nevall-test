@@ -1,0 +1,205 @@
+{
+    "globals": {
+        "jQuery": true,
+        "$": true,
+        "c3": true,
+        "fa": true,
+        "gApplicationName": true,
+        "gSessionTimeoutMinutes": true,
+        "gShowSessionEstablishedMsg": true,
+        "jspath": true,
+        "imgpath": true,
+        "faiconspath": true,
+        "hopscotch": true,
+        "dhtmlx": true,
+        "dhxLayout": true,
+        "dhtmlXChart": true,
+        "dhtmlxEvent": true,
+        "dhtmlXPopup": true,
+        "dhtmlXWindows": true,
+        "dhtmlXLayoutObject": true,
+        "dhtmlXWindowsCell": true,
+        "dhtmlXGridObject": true,
+        "dhtmlXTabBar": true,
+        "dhtmlXAccordion": true,
+        "dhtmlXToolbarObject": true,
+        "dhtmlXRibbon": true,
+        "dhtmlXCombo": true,
+        "eXcell": true,
+        "dhtmlXMenuObject": true,
+        "dhtmlXForm": true,
+        "dhtmlXTreeObject": true,
+        "dhtmlXDataStore": true,
+        "dhtmlXVaultObject": true,
+        "eXcell_c3img": true, // I want to remove these eventually
+        "eXcell_c3link": true, // I want to remove these eventually
+        "containsANonSearchableWord": true, // I want to remove these eventually; Karen's search code (c3prototypes.js); Doesn't need to be in that file anyways cause it's not a prototype.
+        "validKeyWords": true, // I want to remove these eventually; Karen's search code (c3prototypes.js); Doesn't need to be in that file anyways cause it's not a prototype.
+        "validateInsight": true, // I want to remove these eventually; Karen's search code (c3prototypes.js); Doesn't need to be in that file anyways cause it's not a prototype.
+        "fm": true, // I want to remove these eventually; Brian's form (blib_form.js); need to not be in the window scope.
+        "sideTextFormatAbs": true, // I want to remove these eventually; Brian's form (blib_form.js); need to not be in the window scope.
+        "sideTextFormat": true, // I want to remove these eventually; Brian's form (blib_form.js); need to not be in the window scope.
+        "lovFormatAbs": true, // I want to remove these eventually; Brian's form (blib_form.js); need to not be in the window scope.
+        "lovObjFormatAbs": true, // I want to remove these eventually; Brian's form (blib_form.js); need to not be in the window scope.
+        "imgTemplateFmt": true, // I want to remove these eventually; Brian's form (blib_form.js); need to not be in the window scope.
+        "fr": true, // I want to remove these eventually; Brian's form (blib_form.js); need to not be in the window scope.
+        "gd2": true, // I want to remove these eventually; Brian's grid (blib_grid.js); need to not be in the window scope.
+        "adhocObj": true, // I want to remove these eventually; Brian's adhoc (adhoc.js); need to not be in the window scope.
+        "app": true, // I want to remove these eventually; Brian's library (blib.js); need to not be in the window scope.
+        "U": true, // I want to remove these eventually; Brian's library (blib.js); need to not be in the window scope.
+        "attachmentsView": true // I want to remove these eventually; Dalton's (attachments*.js); need to not be in the window scope.
+    },
+    "env": {
+        "browser": true
+    },
+    "rules": {
+        "no-alert": "error",
+        "no-console": "error",
+        "no-debugger": "error",
+        "consistent-this": [
+            "warn",
+            "me"
+        ],
+        "indent": [
+            "error",
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "linebreak-style": [
+            "warn",
+            "windows"
+        ],
+        "no-tabs": "warn",
+        "quotes": [
+            "warn",
+            "single",
+            {
+                "avoidEscape": true
+            }
+        ],
+        "curly": [
+            "error",
+            "all"
+        ],
+        "brace-style": "error",
+        "array-bracket-newline": [
+            "error",
+            {
+                "multiline": true
+            }
+        ],
+        "object-curly-newline": [
+            "error",
+            {
+                "minProperties": 1
+            }
+        ],
+        "object-curly-spacing": [
+            "error",
+            "always"
+        ],
+        "no-implicit-globals": "error",
+        "no-loop-func": "error",
+        "yoda": "error",
+        "semi": [
+            "error",
+            "always"
+        ],
+        "eqeqeq": [
+            "error",
+            "smart"
+        ],
+        "no-multi-spaces": "warn",
+        "no-lone-blocks": "warn",
+        "comma-dangle": [
+            "error",
+            "never"
+        ],
+        "comma-spacing": [
+            "error",
+            {
+                "before": false,
+                "after": true
+            }
+        ],
+        "space-before-function-paren": [
+            "error",
+            "always"
+        ],
+        "space-infix-ops": "error",
+        "no-label-var": "error",
+        "no-whitespace-before-property": "error",
+        "no-const-assign": "warn",
+        "no-this-before-super": "warn",
+        "no-undef": "error",
+        "no-unreachable": "warn",
+        "no-use-before-define": "warn",
+        "constructor-super": "warn",
+        "valid-typeof": "warn",
+        "one-var": [
+            "error",
+            {
+                "var": "always"
+            }
+        ],
+        "vars-on-top": "error",
+        "no-unused-vars": [
+            "error",
+            {
+                "vars": "all",
+                "args": "none"
+            }
+        ],
+        "no-redeclare": "error",
+        "padded-blocks": [
+            "error",
+            "never"
+        ],
+        "padding-line-between-statements": [
+            "warn",
+            {
+                "blankLine": "always",
+                "prev": [
+                    "const",
+                    "let",
+                    "var"
+                ],
+                "next": "*"
+            },
+            {
+                "blankLine": "any",
+                "prev": [
+                    "const",
+                    "let",
+                    "var"
+                ],
+                "next": [
+                    "const",
+                    "let",
+                    "var"
+                ]
+            }
+        ],
+        "no-multiple-empty-lines": "warn",
+        "eol-last": [
+            "warn",
+            "always"
+        ],
+        "key-spacing": [
+            "error",
+            {
+                "beforeColon": false,
+                "afterColon": true
+            }
+        ],
+        "keyword-spacing": [
+            "warn",
+            {
+                "before": true,
+                "after": true
+            }
+        ]
+    }
+}
